@@ -1,0 +1,242 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-display: 'Outfit', 'Plus Jakarta Sans', system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+
+    /* Default Theme: Lavender Purple Dark */
+    --color-canvas: #09090f;
+    --color-surface: #11111b;
+    --color-surface-elevated: #181827;
+    --color-border: rgba(168, 85, 247, 0.15);
+    --color-border-active: rgba(168, 85, 247, 0.4);
+    --color-text-primary: #f8fafc;
+    --color-text-secondary: #cbd5e1;
+    --color-text-muted: #64748b;
+    --color-accent: #a855f7;
+    --color-accent-hover: #9333ea;
+    --color-accent-soft: rgba(168, 85, 247, 0.12);
+    --color-accent-glow: rgba(168, 85, 247, 0.25);
+  }
+
+  /* 1. Lavender & Purple */
+  [data-theme="lavender-purple"][data-mode="dark"] {
+    --color-canvas: #0a0814;
+    --color-surface: #120e24;
+    --color-surface-elevated: #1a1533;
+    --color-border: rgba(168, 85, 247, 0.18);
+    --color-border-active: rgba(192, 132, 252, 0.45);
+    --color-text-primary: #faf5ff;
+    --color-text-secondary: #e9d5ff;
+    --color-text-muted: #948bba;
+    --color-accent: #a855f7;
+    --color-accent-hover: #9333ea;
+    --color-accent-soft: rgba(168, 85, 247, 0.15);
+  }
+  [data-theme="lavender-purple"][data-mode="light"] {
+    --color-canvas: #fbf9ff;
+    --color-surface: #ffffff;
+    --color-surface-elevated: #f3e8ff;
+    --color-border: rgba(168, 85, 247, 0.2);
+    --color-border-active: rgba(168, 85, 247, 0.5);
+    --color-text-primary: #1e1035;
+    --color-text-secondary: #4c3b6b;
+    --color-text-muted: #7e6f9b;
+    --color-accent: #7e22ce;
+    --color-accent-hover: #6b21a8;
+    --color-accent-soft: rgba(126, 34, 206, 0.08);
+  }
+
+  /* 2. Midnight Dark */
+  [data-theme="midnight-dark"][data-mode="dark"] {
+    --color-canvas: #05070a;
+    --color-surface: #0c1017;
+    --color-surface-elevated: #141b24;
+    --color-border: rgba(56, 189, 248, 0.14);
+    --color-border-active: rgba(56, 189, 248, 0.4);
+    --color-text-primary: #f8fafc;
+    --color-text-secondary: #cbd5e1;
+    --color-text-muted: #64748b;
+    --color-accent: #38bdf8;
+    --color-accent-hover: #0ea5e9;
+    --color-accent-soft: rgba(56, 189, 248, 0.12);
+  }
+  [data-theme="midnight-dark"][data-mode="light"] {
+    --color-canvas: #f8fafc;
+    --color-surface: #ffffff;
+    --color-surface-elevated: #f1f5f9;
+    --color-border: rgba(15, 23, 42, 0.12);
+    --color-border-active: rgba(14, 165, 233, 0.5);
+    --color-text-primary: #0f172a;
+    --color-text-secondary: #334155;
+    --color-text-muted: #64748b;
+    --color-accent: #0284c7;
+    --color-accent-hover: #0369a1;
+    --color-accent-soft: rgba(2, 132, 199, 0.08);
+  }
+
+  /* 3. Clean White and Silver */
+  [data-theme="clean-silver"][data-mode="dark"] {
+    --color-canvas: #0d0f12;
+    --color-surface: #15181e;
+    --color-surface-elevated: #1e222a;
+    --color-border: rgba(226, 232, 240, 0.15);
+    --color-border-active: rgba(226, 232, 240, 0.35);
+    --color-text-primary: #f8fafc;
+    --color-text-secondary: #cbd5e1;
+    --color-text-muted: #94a3b8;
+    --color-accent: #e2e8f0;
+    --color-accent-hover: #ffffff;
+    --color-accent-soft: rgba(226, 232, 240, 0.1);
+  }
+  [data-theme="clean-silver"][data-mode="light"] {
+    --color-canvas: #fbfcfd;
+    --color-surface: #ffffff;
+    --color-surface-elevated: #f4f6f8;
+    --color-border: rgba(100, 116, 139, 0.15);
+    --color-border-active: rgba(71, 85, 105, 0.35);
+    --color-text-primary: #090d16;
+    --color-text-secondary: #334155;
+    --color-text-muted: #64748b;
+    --color-accent: #1e293b;
+    --color-accent-hover: #0f172a;
+    --color-accent-soft: rgba(30, 41, 59, 0.06);
+  }
+
+  /* 4. Soft Pink */
+  [data-theme="soft-pink"][data-mode="dark"] {
+    --color-canvas: #12090d;
+    --color-surface: #1e1017;
+    --color-surface-elevated: #2b1722;
+    --color-border: rgba(244, 114, 182, 0.16);
+    --color-border-active: rgba(244, 114, 182, 0.45);
+    --color-text-primary: #fdf2f8;
+    --color-text-secondary: #fbcfe8;
+    --color-text-muted: #9d7b8d;
+    --color-accent: #f472b6;
+    --color-accent-hover: #ec4899;
+    --color-accent-soft: rgba(244, 114, 182, 0.12);
+  }
+  [data-theme="soft-pink"][data-mode="light"] {
+    --color-canvas: #fffafb;
+    --color-surface: #ffffff;
+    --color-surface-elevated: #fdf2f8;
+    --color-border: rgba(244, 114, 182, 0.2);
+    --color-border-active: rgba(219, 39, 119, 0.45);
+    --color-text-primary: #2d101d;
+    --color-text-secondary: #5a283e;
+    --color-text-muted: #8b556b;
+    --color-accent: #db2777;
+    --color-accent-hover: #be185d;
+    --color-accent-soft: rgba(219, 39, 119, 0.08);
+  }
+
+  /* 5. Ocean Blue */
+  [data-theme="ocean-blue"][data-mode="dark"] {
+    --color-canvas: #060e17;
+    --color-surface: #0b1827;
+    --color-surface-elevated: #112338;
+    --color-border: rgba(14, 165, 233, 0.18);
+    --color-border-active: rgba(14, 165, 233, 0.45);
+    --color-text-primary: #f0f9ff;
+    --color-text-secondary: #bae6fd;
+    --color-text-muted: #64829e;
+    --color-accent: #0284c7;
+    --color-accent-hover: #0369a1;
+    --color-accent-soft: rgba(14, 165, 233, 0.12);
+  }
+  [data-theme="ocean-blue"][data-mode="light"] {
+    --color-canvas: #f8fafc;
+    --color-surface: #ffffff;
+    --color-surface-elevated: #e0f2fe;
+    --color-border: rgba(14, 165, 233, 0.2);
+    --color-border-active: rgba(2, 132, 199, 0.5);
+    --color-text-primary: #082f49;
+    --color-text-secondary: #0c4a6e;
+    --color-text-muted: #386786;
+    --color-accent: #0284c7;
+    --color-accent-hover: #0369a1;
+    --color-accent-soft: rgba(2, 132, 199, 0.08);
+  }
+
+  /* 6. Warm Cream and Gold */
+  [data-theme="cream-gold"][data-mode="dark"] {
+    --color-canvas: #12100a;
+    --color-surface: #1e1910;
+    --color-surface-elevated: #2a2316;
+    --color-border: rgba(234, 179, 8, 0.16);
+    --color-border-active: rgba(234, 179, 8, 0.45);
+    --color-text-primary: #fefce8;
+    --color-text-secondary: #fef08a;
+    --color-text-muted: #968862;
+    --color-accent: #eab308;
+    --color-accent-hover: #ca8a04;
+    --color-accent-soft: rgba(234, 179, 8, 0.12);
+  }
+  [data-theme="cream-gold"][data-mode="light"] {
+    --color-canvas: #fdfcf7;
+    --color-surface: #ffffff;
+    --color-surface-elevated: #fef9c3;
+    --color-border: rgba(202, 138, 4, 0.2);
+    --color-border-active: rgba(161, 98, 7, 0.45);
+    --color-text-primary: #291c03;
+    --color-text-secondary: #573f08;
+    --color-text-muted: #7e6629;
+    --color-accent: #ca8a04;
+    --color-accent-hover: #a16207;
+    --color-accent-soft: rgba(202, 138, 4, 0.08);
+  }
+
+  /* 7. Forest Green */
+  [data-theme="forest-green"][data-mode="dark"] {
+    --color-canvas: #06110a;
+    --color-surface: #0d1e13;
+    --color-surface-elevated: #152b1b;
+    --color-border: rgba(34, 197, 94, 0.16);
+    --color-border-active: rgba(34, 197, 94, 0.45);
+    --color-text-primary: #f0fdf4;
+    --color-text-secondary: #bbf7d0;
+    --color-text-muted: #648c71;
+    --color-accent: #22c55e;
+    --color-accent-hover: #16a34a;
+    --color-accent-soft: rgba(34, 197, 94, 0.12);
+  }
+  [data-theme="forest-green"][data-mode="light"] {
+    --color-canvas: #f8faf9;
+    --color-surface: #ffffff;
+    --color-surface-elevated: #dcfce7;
+    --color-border: rgba(34, 197, 94, 0.2);
+    --color-border-active: rgba(22, 163, 74, 0.45);
+    --color-text-primary: #052e16;
+    --color-text-secondary: #14532d;
+    --color-text-muted: #3c6e4e;
+    --color-accent: #16a34a;
+    --color-accent-hover: #15803d;
+    --color-accent-soft: rgba(22, 163, 74, 0.08);
+  }
+
+  body {
+    background-color: var(--color-canvas);
+    color: var(--color-text-primary);
+    font-family: var(--font-sans);
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-border-active);
+}

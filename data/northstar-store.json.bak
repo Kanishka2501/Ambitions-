@@ -1,0 +1,257 @@
+{
+  "users": [
+    {
+      "id": "user-founder-1",
+      "email": "kanishkarajput7777@gmail.com",
+      "name": "Kanishka Rajput",
+      "role": "founder_admin",
+      "tier": "founder_circle",
+      "coachingStyle": "strategic",
+      "themePalette": "lavender-purple",
+      "themeMode": "dark",
+      "createdAt": "2026-10-16T15:59:08.139Z",
+      "passwordHash": "b21101441df45e85e7595ef3d36d3858fb7e82c0c1e775443934e99d9a30b4dc3f554c2571d38dd7d85910f75ae5241f2137b5bff0ec5c7a49303b5944ff6930",
+      "passwordSalt": "89ada4d8e55a433020e544a1f1d31c7f"
+    }
+  ],
+  "sessions": [
+    {
+      "id": "sess-1792246186797-mlekz",
+      "userId": "user-founder-1",
+      "token": "67a6874f81aea80b3153efaa5e502740ad73fe2d9d762e480805e5c19896a456",
+      "createdAt": "2026-10-17T14:09:46.797Z",
+      "expiresAt": "2026-10-24T14:09:46.797Z",
+      "ip": "127.0.0.1",
+      "userAgent": "node"
+    },
+    {
+      "id": "sess-1792500413977-vif3a",
+      "userId": "user-founder-1",
+      "token": "8b08b2ae7923d7d6ef002270dfcff131ab207ba1018488c33d19995396f3c0be",
+      "createdAt": "2026-10-20T12:46:53.977Z",
+      "expiresAt": "2026-10-27T12:46:53.976Z",
+      "ip": "127.0.0.1",
+      "userAgent": "node"
+    }
+  ],
+  "goals": [
+    {
+      "id": "goal-seed-1",
+      "userId": "user-founder-1",
+      "title": "Launch Northstar AI to 1,000 Active Goal Operators",
+      "whyItMatters": "Empower ambitious builders, students, and founders to translate visionary life goals into structured daily momentum and real progress.",
+      "measurableCriteria": "1,000 weekly active users with at least 3 completed daily actions per week and 85% weekly review completion.",
+      "currentBaseline": "Core product architecture ready, verified AI planner, zero paying users yet.",
+      "targetDeadline": "2026-12-31",
+      "weeklyCommitmentHours": 25,
+      "resourcesBudget": "MacBook Pro, Google AI Studio Gemini API, Cloud Run instance, $2,000 launch budget.",
+      "knownObstacles": "Scope creep, perfectionism before public feedback, marketing distribution friction.",
+      "constraints": "Maintain 99.9% uptime, strict user data privacy, zero hallucinated progress percentages.",
+      "coachingStyle": "strategic",
+      "status": "active",
+      "immediateNextAction": "Review the high-priority task queue and complete user onboarding test run.",
+      "createdAt": "2026-10-09T15:59:08.140Z",
+      "updatedAt": "2026-10-16T15:59:08.140Z",
+      "progressPercent": 35
+    }
+  ],
+  "milestones": [
+    {
+      "id": "ms-1",
+      "userId": "user-founder-1",
+      "goalId": "goal-seed-1",
+      "title": "Milestone 1: Production Core Architecture & AI Engine",
+      "description": "Ship the full-stack system with adaptive coaching, task management, and responsive theme architecture.",
+      "targetDate": "2026-10-31",
+      "completed": true,
+      "completedAt": "2026-10-14T15:59:08.140Z",
+      "order": 1,
+      "successMetric": "Full CRUD on tasks, sub-second execution, valid Gemini responses."
+    },
+    {
+      "id": "ms-2",
+      "userId": "user-founder-1",
+      "goalId": "goal-seed-1",
+      "title": "Milestone 2: Closed Beta with 50 Ambitious Operators",
+      "description": "Onboard early founders, engineers, and students to validate daily momentum and weekly reviews.",
+      "targetDate": "2026-11-20",
+      "completed": false,
+      "order": 2,
+      "successMetric": "NPS > 60 and 4+ days/week retention among beta cohort."
+    },
+    {
+      "id": "ms-3",
+      "userId": "user-founder-1",
+      "goalId": "goal-seed-1",
+      "title": "Milestone 3: Public Launch & Scaling to 1,000 Active Operators",
+      "description": "Execute launch campaign, public show-and-tell, and organic viral loop through weekly progress shareables.",
+      "targetDate": "2026-12-31",
+      "completed": false,
+      "order": 3,
+      "successMetric": "1,000 weekly active operators executing daily goals."
+    }
+  ],
+  "tasks": [
+    {
+      "id": "task-1",
+      "userId": "user-founder-1",
+      "goalId": "goal-seed-1",
+      "milestoneId": "ms-1",
+      "title": "Verify Gemini 3.8 Flash structured output schema integration",
+      "description": "Ensure plan generator returns validated JSON schemas with zero markdown wrapping errors.",
+      "status": "completed",
+      "priority": "urgent",
+      "estimatedMinutes": 45,
+      "actualMinutesSpent": 40,
+      "dueDate": "2026-10-16",
+      "completedAt": "2026-10-16T15:59:08.140Z",
+      "subtasks": [
+        {
+          "id": "st-1",
+          "title": "Test responseSchema in server-side AI runner",
+          "completed": true
+        },
+        {
+          "id": "st-2",
+          "title": "Verify fallback resilience when offline",
+          "completed": true
+        }
+      ],
+      "notes": "Structured JSON validation working with fallback mechanism.",
+      "createdAt": "2026-10-15T15:59:08.140Z",
+      "order": 1
+    },
+    {
+      "id": "task-2",
+      "userId": "user-founder-1",
+      "goalId": "goal-seed-1",
+      "milestoneId": "ms-2",
+      "title": "Curate list of 50 high-ambition beta test operators",
+      "description": "Identify university students, indie developers, and solo founders with ambitious goals for invite-only access.",
+      "status": "todo",
+      "priority": "high",
+      "estimatedMinutes": 60,
+      "actualMinutesSpent": 15,
+      "dueDate": "2026-10-16",
+      "subtasks": [
+        {
+          "id": "st-3",
+          "title": "Draft personalised 2-sentence beta invitation",
+          "completed": true
+        },
+        {
+          "id": "st-4",
+          "title": "Prepare feedback intake questionnaire",
+          "completed": false
+        }
+      ],
+      "blocker": "",
+      "notes": "Aim for diverse goal domains: startup launch, thesis completion, and marathon training.",
+      "createdAt": "2026-10-16T15:59:08.140Z",
+      "order": 2
+    },
+    {
+      "id": "task-3",
+      "userId": "user-founder-1",
+      "goalId": "goal-seed-1",
+      "milestoneId": "ms-2",
+      "title": "Run complete weekly review retrospective cycle",
+      "description": "Test the automated review generator and verify next-week adaptive task recommendations.",
+      "status": "todo",
+      "priority": "medium",
+      "estimatedMinutes": 30,
+      "actualMinutesSpent": 0,
+      "dueDate": "2026-10-16",
+      "subtasks": [],
+      "notes": "Assess whether direct vs strategic coaching style gives clearer critique.",
+      "createdAt": "2026-10-16T15:59:08.140Z",
+      "order": 3
+    }
+  ],
+  "reviews": [
+    {
+      "id": "rev-1",
+      "userId": "user-founder-1",
+      "goalId": "goal-seed-1",
+      "weekEndingDate": "2026-10-13",
+      "accomplishedText": "Finalized database schema, token rate-limiting, and theme palette system with zero layout glitches.",
+      "struggledText": "Tendency to tweak minor UI micro-details instead of testing end-to-end user journeys.",
+      "learnedText": "A tight plan with 3 crisp tasks beats an overwhelming list of 15 aspirational items.",
+      "wastedTimeText": "Over-optimizing animations that users barely notice.",
+      "needsToChangeText": "Focus on shipping beta invites and real user feedback loops.",
+      "prioritiesNextWeek": [
+        "Run end-to-end testing with Gemini API",
+        "Invite first 10 beta testers",
+        "Review task completion metrics"
+      ],
+      "tasksCompletedCount": 6,
+      "tasksMissedCount": 1,
+      "aiFeedbackSummary": "Strategic evaluation: High technical velocity, but critical path now requires customer contact. Guard against inward refinement.",
+      "createdAt": "2026-10-13T15:59:08.140Z"
+    }
+  ],
+  "resources": [
+    {
+      "id": "res-1",
+      "userId": "user-founder-1",
+      "goalId": "goal-seed-1",
+      "title": "High Output Management — Andrew Grove",
+      "type": "book",
+      "notes": "Classic operating system for leverage, indicators, and managerial leverage.",
+      "keyTakeaways": [
+        "Output = sum of team output + influenced output.",
+        "Establish leading indicators rather than lagging metrics.",
+        "High leverage activities yield compounding operational clarity."
+      ],
+      "aiActionSteps": [
+        "Define a single leading metric for this week.",
+        "Eliminate lowest-leverage task each morning."
+      ],
+      "createdAt": "2026-10-16T15:59:08.140Z"
+    }
+  ],
+  "coachMessages": [
+    {
+      "id": "msg-1",
+      "userId": "user-founder-1",
+      "goalId": "goal-seed-1",
+      "sender": "coach",
+      "text": "Welcome to Northstar AI, Kanishka. Your destination is 1,000 active goal operators by year end. Milestone 1 is in progress. What is the single highest-leverage task in front of you right now?",
+      "timestamp": "2026-10-16T14:59:08.140Z",
+      "coachingStyle": "strategic",
+      "recommendedAction": "Verify task completion flow and run a focus session."
+    }
+  ],
+  "planVersions": [
+    {
+      "id": "ver-1",
+      "goalId": "goal-seed-1",
+      "timestamp": "2026-10-16T15:59:08.140Z",
+      "reason": "Initial goal generation and calibration",
+      "summary": "Decomposed 1,000 active operators target into 3 phases and weekly execution rhythms.",
+      "changes": [
+        "Created 3 milestones",
+        "Configured 25h/week commitment limit",
+        "Set strategic coaching style"
+      ]
+    },
+    {
+      "goalId": "goal-seed-1",
+      "reason": "Mid-quarter pivot: focus on closed beta operators",
+      "summary": "Plan adjusted: Mid-quarter pivot: focus on closed beta operators",
+      "changes": [
+        "Moved launch date by 1 week",
+        "Prioritized feedback loop"
+      ],
+      "id": "ver-1792500414011",
+      "timestamp": "2026-10-20T12:46:54.011Z"
+    }
+  ],
+  "aiCallsCount": 13,
+  "adminSettings": {
+    "allowNewRegistrations": true,
+    "dailyAiCallLimitPerUser": 50,
+    "maintenanceMode": false,
+    "defaultCoachingStyle": "strategic"
+  }
+}

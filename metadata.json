@@ -1,0 +1,6 @@
+{
+  "name": "Northstar AI - Personal Goal Operating System",
+  "description": "A world-class personal goal operating system that transforms ambitious goals into personalized roadmaps, daily execution systems, adaptive AI coaching, and self-improving weekly reviews.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
